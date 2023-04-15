@@ -451,6 +451,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6871560835524790261, guid: 1d211cc5cf03cde42a054db97a2932bc,
+        type: 3}
+      propertyPath: m_MaxPlayerCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d211cc5cf03cde42a054db97a2932bc, type: 3}
 --- !u!1 &1506670972
@@ -809,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 919132148489714674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.7456846, y: 0.51870704, z: 2.9167757}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3745622627135502893}

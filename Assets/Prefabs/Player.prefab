@@ -161,8 +161,8 @@ GameObject:
   - component: {fileID: 8268438283096503398}
   - component: {fileID: 3394438338602660089}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: Sight
+  m_TagString: Sight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,6 +255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9188626593877509824}
   - component: {fileID: 2336757369468195168}
+  - component: {fileID: -8732965914354202826}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -353,7 +354,21 @@ MonoBehaviour:
     m_ActionId: a13b9dd8-ba40-4177-8743-c5a421af2545
     m_ActionName: Gyro/ChangeScheme[/DualShock4GamepadHID/select]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: PS4
   m_DefaultActionMap: Gyro
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &-8732965914354202826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235800321324885004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f833766bb9eb3e644a61bae1b40dafda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperAirplane: {fileID: 6514344422576516444, guid: 0ce22b941f120804d8f6958c696827a9,
+    type: 3}

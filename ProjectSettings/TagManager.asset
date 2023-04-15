@@ -11,6 +11,8 @@ TagManager:
   - Camera 1
   - Camera 3
   - Camera 2
+  - Sight
+  - PaperAirplane
   layers:
   - Default
   - TransparentFX
