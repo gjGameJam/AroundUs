@@ -80,6 +80,35 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6243942284341366797}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1472824315165278827
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514344422576516444}
+  serializedVersion: 2
+  m_Mass: 1000000
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1182477126420834912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514344422576516444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.22, y: 0.19, z: 1.5824605}
+  m_Center: {x: 0, y: -0.03, z: 0.025}
 --- !u!114 &1649237554
 MonoBehaviour:
   m_ObjectHideFlags: 0

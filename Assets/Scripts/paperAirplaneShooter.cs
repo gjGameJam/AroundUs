@@ -45,4 +45,5 @@ public class paperAirplaneShooter : MonoBehaviour
         cooldownTimer += Time.deltaTime;
 
     }
+
 }

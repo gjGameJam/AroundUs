@@ -13,6 +13,7 @@ TagManager:
   - Camera 2
   - Sight
   - PaperAirplane
+  - AirPlaneObstacle
   layers:
   - Default
   - TransparentFX
