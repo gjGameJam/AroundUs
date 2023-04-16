@@ -125,4 +125,4 @@ MonoBehaviour:
     type: 3}
   planeSpeed: 8
   duration: 3.5
-  paperBallDuration: 1
+  paperBallDuration: 3

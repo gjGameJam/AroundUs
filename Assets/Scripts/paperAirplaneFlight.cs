@@ -34,7 +34,7 @@ public class paperAirplaneFlight : MonoBehaviour
             Transform ballPlacement = gameObject.transform;
             Destroy(gameObject);
             //then instantiate a cute lil paper ball that despawns after duration only if it hits an obstacle
-            Destroy(Instantiate(crumpledPaperBall, ballPlacement.position, Random.rotation), duration);
+            Destroy(Instantiate(crumpledPaperBall, ballPlacement.position, Random.rotation), paperBallDuration);
         }
 
         // if (other.CompareTag("enemyTag"))
