@@ -28,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
     {
         float angle = Random.Range(0, Mathf.PI * 2);
         Vector3 spawnLocation = new Vector3(Mathf.Sin(angle), 0f, Mathf.Cos(angle));
-        spawnLocation *= 10;
+        spawnLocation *= 25;
         spawnLocation = spawnLocation + pos;
         GameObject clone = Instantiate(enemy, spawnLocation, new Quaternion());
         clone.transform.LookAt(transform);
