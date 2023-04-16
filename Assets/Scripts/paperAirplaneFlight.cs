@@ -7,7 +7,7 @@ public class paperAirplaneFlight : MonoBehaviour
     [SerializeField]
     private GameObject crumpledPaperBall;
     [SerializeField]
-    private float planeSpeed, duration;
+    private float planeSpeed, duration, paperBallDuration;
     private Vector3 forward;
 
     
@@ -36,6 +36,12 @@ public class paperAirplaneFlight : MonoBehaviour
             //then instantiate a cute lil paper ball that despawns after duration only if it hits an obstacle
             Destroy(Instantiate(crumpledPaperBall, ballPlacement.position, Random.rotation), duration);
         }
+
+        // if (other.CompareTag("enemyTag"))
+        // {
+        //     //if the plane hits an enemy, destroy enemy and plane
+        //     Destroy(gameObject);
+        // }
     }
 
 
