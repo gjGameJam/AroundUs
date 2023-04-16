@@ -5,8 +5,12 @@ using UnityEngine;
 public class paperAirplaneFlight : MonoBehaviour
 {
     [SerializeField]
+    private GameObject crumpledPaperBall;
+    [SerializeField]
     private float planeSpeed, duration;
     private Vector3 forward;
+
+    
 
     void Start()
     {
@@ -17,7 +21,6 @@ public class paperAirplaneFlight : MonoBehaviour
     }
     void FixedUpdate()
     {
-        
         //then the airplane travels linearly on the vector 3 direction from the start
         transform.position += forward * Time.deltaTime * planeSpeed;
     }
@@ -27,7 +30,11 @@ public class paperAirplaneFlight : MonoBehaviour
         if (other.CompareTag("AirPlaneObstacle"))
         {
             //if the plane hits an obstacle before enemy, destroy plane
+            
+            Transform ballPlacement = gameObject.transform;
             Destroy(gameObject);
+            //then instantiate a cute lil paper ball that despawns after duration only if it hits an obstacle
+            Destroy(Instantiate(crumpledPaperBall, ballPlacement.position, Random.rotation), duration);
         }
     }
 

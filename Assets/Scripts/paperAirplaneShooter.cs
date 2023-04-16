@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class paperAirplaneShooter : MonoBehaviour
 {
@@ -15,16 +16,25 @@ public class paperAirplaneShooter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //allow player to shoot off start
+        cooldownTimer = cooldownTotal;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //check if player wants to shoot
-        if (Input.GetButtonDown("Fire1"))
-        {
+    }
+
+    void FixedUpdate()
+    {
+        cooldownTimer += Time.deltaTime;
+    }
+
+    public void Shoot(InputAction.CallbackContext ctx) {
+        //Debug.Log("Called");
+        if (ctx.performed) {
+            //Debug.Log("fire");
             //get the position of the sight (the floating cube)
             Transform sightPlacement = GameObject.FindWithTag("Sight").transform;
             //and check if shooting is off cooldown (timer is greater or equal to total cooldown time)
@@ -36,14 +46,7 @@ public class paperAirplaneShooter : MonoBehaviour
                 //this prefab will fly by itself until it despawns or hits an enemy
                 Instantiate(paperAirplane, sightPlacement.position, sightPlacement.rotation);
             }
-            
         }
-    }
-
-    void FixedUpdate()
-    {
-        cooldownTimer += Time.deltaTime;
-
     }
 
 }

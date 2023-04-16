@@ -121,5 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246dc45e667072c469bd0ff8bdf097cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crumpledPaperBall: {fileID: 6543668757726708421, guid: 1fe6816250737864890fd0711c9504bc,
+    type: 3}
   planeSpeed: 4
   duration: 3

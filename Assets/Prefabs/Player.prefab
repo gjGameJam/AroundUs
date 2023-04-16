@@ -353,6 +353,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a13b9dd8-ba40-4177-8743-c5a421af2545
     m_ActionName: Gyro/ChangeScheme[/DualShock4GamepadHID/select]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -8732965914354202826}
+        m_TargetAssemblyTypeName: paperAirplaneShooter, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 935a87f5-3f5f-404d-87e5-533db852bc4c
+    m_ActionName: Gyro/Shoot[/DualSenseGamepadHID/rightTrigger]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: PS4
   m_DefaultActionMap: Gyro
