@@ -123,5 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumpledPaperBall: {fileID: 6543668757726708421, guid: 1fe6816250737864890fd0711c9504bc,
     type: 3}
-  planeSpeed: 4
-  duration: 3
+  planeSpeed: 8
+  duration: 3.5
+  paperBallDuration: 3
