@@ -14,7 +14,7 @@ TagManager:
   - Sight
   - PaperAirplane
   - AirPlaneObstacle
-  - Enemy
+  - enemyTag
   layers:
   - Default
   - TransparentFX

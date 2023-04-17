@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 1771436190000176916}
   m_Layer: 0
   m_Name: Among Us Astronaut
-  m_TagString: Enemy
+  m_TagString: enemyTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
