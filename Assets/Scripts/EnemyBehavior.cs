@@ -6,7 +6,7 @@ public class EnemyBehavior : MonoBehaviour
 {
     private Rigidbody rb;
     private Collider enemycollider;
-    [SerializedField] private GameObject player;
+    [SerializeField] private GameObject player;
     [SerializeField] private float speed;
     private Vector3 velocity;
     private Vector3 forward;
@@ -21,7 +21,7 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.LookAt(player);
+        transform.LookAt(player.transform);
         velocity = new Vector3(transform.forward.x, 0, transform.forward.z) * speed;
         rb.velocity = velocity;
     }

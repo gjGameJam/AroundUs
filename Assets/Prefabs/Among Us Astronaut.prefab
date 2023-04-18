@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 1771436190000176916}
   m_Layer: 0
   m_Name: Among Us Astronaut
-  m_TagString: Untagged
+  m_TagString: enemyTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -503,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94c0536edd510b4bb5b08d3e7ae6126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 4235800321324885004, guid: 673e3957cf2ad7c4da7f4849e9fce6cd, type: 3}
   speed: 5
 --- !u!1 &3428960353278260930
 GameObject:
