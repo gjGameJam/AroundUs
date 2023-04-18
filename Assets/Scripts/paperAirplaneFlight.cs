@@ -9,6 +9,8 @@ public class paperAirplaneFlight : MonoBehaviour
     [SerializeField]
     private float planeSpeed, duration, paperBallDuration;
     private Vector3 forward;
+    private EnemyBehavior behave;
+    private GameObject enemy;
 
     
 
@@ -27,7 +29,17 @@ public class paperAirplaneFlight : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("AirPlaneObstacle"))
+        if (other.CompareTag("enemyTag"))
+        {
+            Debug.Log("paper airplane hit enemy");
+            //if the plane hits an enemy,  plane (without turning plane into paper ball)
+            Destroy(gameObject);
+            //and destroy enemy (hopefully it can be called like this)
+            Destroy(other.gameObject);
+
+        }
+
+        else if (other.CompareTag("AirPlaneObstacle"))
         {
             //if the plane hits an obstacle before enemy, destroy plane
             
@@ -37,14 +49,7 @@ public class paperAirplaneFlight : MonoBehaviour
             Destroy(Instantiate(crumpledPaperBall, ballPlacement.position, Random.rotation), paperBallDuration);
         }
 
-        if (other.CompareTag("enemyTag"))
-        {
-            Debug.Log("paper airplane hit enemy");
-            //if the plane hits an enemy,  plane (without turning plane into paper ball)
-            Destroy(gameObject);
-            //and destroy enemy (hopefully it can be called like this)
-            Destroy(other);
-        }
+        
     }
 
 
