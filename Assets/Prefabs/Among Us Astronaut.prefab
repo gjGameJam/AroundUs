@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 1476490325728451901}
   - component: {fileID: 8886461942350422942}
   - component: {fileID: 1771436190000176916}
+  - component: {fileID: 6411941947812825429}
   m_Layer: 0
   m_Name: Among Us Astronaut
   m_TagString: enemyTag
@@ -505,6 +506,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4235800321324885004, guid: 673e3957cf2ad7c4da7f4849e9fce6cd, type: 3}
   speed: 5
+--- !u!95 &6411941947812825429
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705156473034834460}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e7676ac34700ad4183b835ef2c9edfe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3428960353278260930
 GameObject:
   m_ObjectHideFlags: 0
