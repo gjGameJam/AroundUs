@@ -240,6 +240,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2705156473034834460, guid: decc7812604ad1c4397a9332db2dcd75, type: 3}
+  spawnScale: 50
+--- !u!136 &114715955
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114715941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 1.48, y: 0.00001, z: 0.53}
 --- !u!1 &162204488
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyBehavior : MonoBehaviour
 {
@@ -24,5 +25,15 @@ public class EnemyBehavior : MonoBehaviour
         transform.LookAt(player.transform);
         velocity = new Vector3(transform.forward.x, 0, transform.forward.z) * speed;
         rb.velocity = velocity;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Triggered");
+        Debug.Log(other.gameObject.layer);
+        if (other.gameObject.layer == 3)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
