@@ -23,12 +23,14 @@ public class paperAirplaneShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("spawn");
+        Instantiate(paperAirplane, new Vector3(1.48f,.1f,.5f), Random.rotation);
     }
 
     void FixedUpdate()
     {
         cooldownTimer += Time.deltaTime;
+        
     }
 
     public void Shoot(InputAction.CallbackContext ctx) {

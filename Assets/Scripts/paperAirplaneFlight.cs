@@ -37,11 +37,13 @@ public class paperAirplaneFlight : MonoBehaviour
             Destroy(Instantiate(crumpledPaperBall, ballPlacement.position, Random.rotation), paperBallDuration);
         }
 
-        // if (other.CompareTag("enemyTag"))
-        // {
-        //     //if the plane hits an enemy, destroy enemy and plane
-        //     Destroy(gameObject);
-        // }
+        if (other.CompareTag("enemyTag"))
+        {
+            //if the plane hits an enemy,  plane (without turning plane into paper ball)
+            Destroy(gameObject);
+            //and destroy enemy (hopefully it can be called like this)
+            Destroy(other);
+        }
     }
 
 
