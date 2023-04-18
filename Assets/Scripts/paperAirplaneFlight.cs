@@ -39,6 +39,7 @@ public class paperAirplaneFlight : MonoBehaviour
 
         if (other.CompareTag("enemyTag"))
         {
+            Debug.Log("paper airplane hit enemy");
             //if the plane hits an enemy,  plane (without turning plane into paper ball)
             Destroy(gameObject);
             //and destroy enemy (hopefully it can be called like this)
