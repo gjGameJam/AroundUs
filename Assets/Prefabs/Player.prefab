@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 9188626593877509824}
   - component: {fileID: 2336757369468195168}
   - component: {fileID: -8732965914354202826}
+  - component: {fileID: 923392796693073175}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -369,6 +370,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 935a87f5-3f5f-404d-87e5-533db852bc4c
     m_ActionName: Gyro/Shoot[/DualSenseGamepadHID/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cf6cafad-6c00-4b2a-98c7-6e9ddc03b072
+    m_ActionName: Gyro/Restart
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: PS4
   m_DefaultActionMap: Gyro
@@ -388,3 +393,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paperAirplane: {fileID: 6514344422576516444, guid: 0ce22b941f120804d8f6958c696827a9,
     type: 3}
+--- !u!114 &923392796693073175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235800321324885004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c263670422f7069419a19e94be8c2062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
